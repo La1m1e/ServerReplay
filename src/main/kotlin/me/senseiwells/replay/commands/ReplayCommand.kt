@@ -333,7 +333,7 @@ object ReplayCommand {
             return 0
         }
         recorder.stop(save)
-        context.source.sendSuccess({ Component.literal("Successfully stopped recording:"+recorder.date) }, true)
+        context.source.sendSuccess({ Component.literal("Successfully stopped recording:"+recorder.date+".mcpr") }, true)
         return 1
     }
 
@@ -451,7 +451,7 @@ object ReplayCommand {
         val here = Component.literal("[here]")
             .withStyle(ChatFormatting.YELLOW, ChatFormatting.BOLD)
             .withStyle { it.withClickEvent(ClickEvent(ClickEvent.Action.OPEN_URL, "$url/$path")) }
-        val message = Component.literal("You can download the replay ").append(here)
+        val message = Component.literal("You can download the replay ").append(here).append(":").append("$url/$path")
         context.source.sendSystemMessage(message)
         return 1
     }

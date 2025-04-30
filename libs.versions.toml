@@ -16,8 +16,8 @@ voicechat            = "fabric-1.21.1-2.5.20"
 voicechat-api        = "2.5.0"
 vmp                  = "0.2.0+beta.7.168+1.21.1"
 c2me                 = "0.3.0+alpha.0.206+1.21.1"
-servux               = "1.21-0.3.8-sakura.1"
-syncmatica           = "1.21-sakura.6"
+servux               = "1.21-0.3.13"
+syncmatica           = "1.21-0.3.14-sakura.5"
 replay-studio        = "1e96fda605"
 
 [libraries]
