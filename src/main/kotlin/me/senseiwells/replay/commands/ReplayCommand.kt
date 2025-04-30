@@ -333,7 +333,7 @@ object ReplayCommand {
             return 0
         }
         recorder.stop(save)
-        context.source.sendSuccess({ Component.literal("Successfully stopped recording") }, true)
+        context.source.sendSuccess({ Component.literal("Successfully stopped recording:"+recorder.date) }, true)
         return 1
     }
 

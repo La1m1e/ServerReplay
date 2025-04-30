@@ -93,7 +93,7 @@ abstract class ReplayRecorder(
     private val replay: SizedZipReplayFile
     private val output: ReplayOutputStream
     private val meta: ReplayMetaData
-    private val date: String
+    public val date: String
 
     private val packs = HashMap<Int, String>()
 
